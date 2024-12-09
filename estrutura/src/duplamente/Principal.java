@@ -2,21 +2,26 @@ package duplamente;
 
 public class Principal {
 	public static void main(String[] args) {
-		ListaDuplamenteEncadeada lista = new ListaDuplamenteEncadeada();	
-		lista.adicionaNoInicio(2);
-		lista.adicionaNoInicio(3);
-		lista.adicionaNoInicio(5);
-		lista.adicionaNoInicio(1);
-		
-		System.out.println(lista);
-		System.out.println("---------------------------");
-		int listaEstatica[] = new int[4];
-		listaEstatica[0] = 1;
-		listaEstatica[1] = 5;
-		listaEstatica[2] = 3;
-		listaEstatica[3] = 2;
-		
-		System.out.println(lista.recebeVetor(listaEstatica));
-		
-	}
+        ListaDuplamenteEncadeada lista = new ListaDuplamenteEncadeada();
+        ListaDuplamenteEncadeada subLista1 = new ListaDuplamenteEncadeada();
+
+
+
+
+        lista.adiciona(0, "Amor");// Posição 0
+        lista.adiciona(1, "Maior");// Posição 1
+        lista.adiciona(2, "Tabaco");// Posição 2
+
+        //Temos elementos duplicados nos indices [0, 2, 3, 4, 5]
+        System.out.println(lista);
+        System.out.println("---------------------------");
+
+        lista.removeCaracter("a");
+        System.out.println(lista);
+
+        // ELEMENTO 4
+
+
+
+    }
 }
