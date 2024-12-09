@@ -1,48 +1,39 @@
-package duplamente;
 
-/*
----------------------------------------------------------
-:: Prof. Heraldo Gonçalves Lima Junior
-:: Curso: Sistemas para a Internet
-:: Disciplina: Estruturas de Dados
-:: Contato: heraldo.junior@ifsertao-pe.edu.br
----------------------------------------------------------
-*/
 public class No {
-	private No proximo;
-	private No anterior;
-	private Object elemento;
-	
-	public No(Object elemento, No proximo) {
-		this.proximo = proximo;
-		this.elemento = elemento;
-	}		
+    private No proximo;
+    private No anterior;
+    private Object elemento;
 
-	public No getAnterior() {
-		return anterior;
-	}
+    public No(Object elemento, No proximo) {
+        this.proximo = proximo;
+        this.elemento = elemento;
+    }
 
-	public void setAnterior(No anterior) {
-		this.anterior = anterior;
-	}
+    public No getAnterior() {
+        return anterior;
+    }
 
-	public No(Object elemento) {
-		this.elemento = elemento;
-	}
+    public void setAnterior(No anterior) {
+        this.anterior = anterior;
+    }
 
-	public No getProximo() {
-		return proximo;
-	}
+    public No(Object elemento) {
+        this.elemento = elemento;
+    }
 
-	public void setProximo(No proximo) {
-		this.proximo = proximo;
-	}
+    public No getProximo() {
+        return proximo;
+    }
 
-	public Object getElemento() {
-		return elemento;
-	}
+    public void setProximo(No proximo) {
+        this.proximo = proximo;
+    }
 
-	public void setElemento(Object elemento) {
-		this.elemento = elemento;
-	}
+    public Object getElemento() {
+        return elemento;
+    }
+
+    public void setElemento(Object elemento) {
+        this.elemento = elemento;
+    }
 }
